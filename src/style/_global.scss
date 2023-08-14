@@ -1,0 +1,190 @@
+@import 'react-image-gallery/styles/scss/image-gallery.scss';
+
+html,
+body,
+#root,
+#root > * {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+#searchForm > .ant-row > .ant-row.ant-form-item {
+  width: 100%;
+  text-align: right;
+  padding-right: 12px;
+  .ant-col {
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+    .ant-btn:first-child {
+      margin-right: 10px;
+    }
+  }
+}
+
+body[theme-mode='dark'] {
+  color: white;
+  .layout-page-header {
+    box-shadow: none;
+  }
+}
+
+.app-loading-wrapper.ant-spin-spinning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background-color: rgba(256, 256, 256, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+
+  background-image: linear-gradient(to right bottom, #1e2832, #f0f0f0);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #eee;
+  border-radius: 100px;
+}
+
+.container1 {
+  padding: 0px 21px;
+}
+.ant-image-preview-operations {
+  margin-top: 20px;
+  transform: translateX(-37%);
+
+  li {
+    span {
+      font-size: 30px;
+    }
+  }
+}
+
+.popover-carts {
+  .pop-cart-body {
+    .pop-cart-content {
+      display: flex;
+      flex-direction: column;
+      gap: 17.41px;
+
+      .product {
+        display: flex;
+        gap: 17.41px;
+        padding-bottom: 17.42px;
+        img {
+          width: 83.5px;
+          height: 103px;
+        }
+        .action {
+          span {
+            svg {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+        .content {
+          .title {
+            color: #000;
+            /* Oswald Medium 18 */
+            font-family: Oswald;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            width: 200px;
+          }
+          .size {
+            margin-top: 14px;
+            span {
+              color: #bdbdbd;
+              /* Roboto Regular 14 AA */
+              font-family: Roboto;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+
+              text-transform: uppercase;
+            }
+          }
+          .color-product {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            .span1 {
+              color: #bdbdbd;
+              /* Roboto Regular 14 AA */
+              font-family: Roboto;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+
+              text-transform: uppercase;
+            }
+          }
+          .art {
+            span {
+              color: #bdbdbd;
+              /* Roboto Regular 14 AA */
+              font-family: Roboto;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+    .pop-cart-footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 50px;
+        font-family: Oswald;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        background-color: black;
+
+        text-transform: uppercase;
+        color: white;
+      }
+    }
+  }
+}

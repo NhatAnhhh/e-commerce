@@ -1,0 +1,13 @@
+button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;  
+    z-index: 9999;  
+}
+button:hover{
+    background-color: #FF6F61 !important;
+}
+img,span{
+    vertical-align:middle;
+}
